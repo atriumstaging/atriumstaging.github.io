@@ -1,6 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax";
-import { BannerLayer } from "react-scroll-parallax/dist/components/ParallaxBanner/types";
-import banner from "../images/SOV-20240212-7704-1920.webp"
+import { BannerLayer } from "react-scroll-parallax/src/components/ParallaxBanner/types";
+import banner from "../images/SOV-20240212-7704-1920.webp";
 import React from "react";
 
 export const AdvancedBannerTop = () => {
@@ -9,7 +9,7 @@ export const AdvancedBannerTop = () => {
     translateY: [0, 40],
     opacity: [1, 0.3],
     scale: [1.1, 1, "easeOutCubic"],
-    shouldAlwaysCompleteAnimation: true
+    shouldAlwaysCompleteAnimation: true,
   };
 
   const headline: BannerLayer = {
@@ -19,10 +19,16 @@ export const AdvancedBannerTop = () => {
     expanded: false,
     children: (
       <h1 className={"flex flex-col"}>
-        <span className={"text-white text-h1 text-center font-Ubuntu uppercase font-extralight"}>Atrium </span>
+        <span
+          className={
+            "text-white text-h1 text-center font-Ubuntu uppercase font-extralight"
+          }
+        >
+          Atrium{" "}
+        </span>
         {/*<span className={"text-white text-h2-plus text-center font-Eyesome"}>Staging & Design</span>*/}
       </h1>
-    )
+    ),
   };
 
   const foreground: BannerLayer = {
@@ -33,29 +39,31 @@ export const AdvancedBannerTop = () => {
     children: (
       <h1 className={"flex flex-col"}>
         {/*<span className={"text-white text-h1 text-center font-Ubuntu uppercase font-extralight"}>Atrium </span>*/}
-        <span className={"text-white text-h2-plus text-center font-Eyesome"}>Staging & Design</span>
+        <span className={"text-white text-h2-plus text-center font-Eyesome"}>
+          Staging & Design
+        </span>
       </h1>
-    )
+    ),
   };
 
   // const foreground: BannerLayer = {
-    // image:
-    //   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner-foreground.png",
-    // translateY: [0, 40],
-    // scale: [1.1, 1, "easeOutCubic"],
-    // shouldAlwaysCompleteAnimation: true,
-    // children: (
-    //   <div className="inset center">
-    //     <span className={"text-white text-h1 text-center font-Ubuntu uppercase font-extralight"}>Atrium</span>
-    //   </div>
-    // )
+  // image:
+  //   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner-foreground.png",
+  // translateY: [0, 40],
+  // scale: [1.1, 1, "easeOutCubic"],
+  // shouldAlwaysCompleteAnimation: true,
+  // children: (
+  //   <div className="inset center">
+  //     <span className={"text-white text-h1 text-center font-Ubuntu uppercase font-extralight"}>Atrium</span>
+  //   </div>
+  // )
   // };
 
   const gradientOverlay: BannerLayer = {
     opacity: [0, 1, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
-    children: <div className="gradient inset" />
+    children: <div className="gradient inset" />,
   };
 
   return (

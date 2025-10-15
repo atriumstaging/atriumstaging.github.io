@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "https://atriumstage.github.io",
+  "homepage": "https://atriumstaging.github.io",
   "dependencies": {
     "@react-navigation/native": "^7.0.15",
     "@react-navigation/stack": "^7.1.2",
